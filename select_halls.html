@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head><title>SELECTION OF HALLS</title>
+    <style>
+       
+        .lt{
+          height:100%;
+          width:40%;
+          float:left;
+          background-color: orangered;
+          text-align: center;
+          color:aliceblue;
+          font-size:xx-large;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .rt{
+                height:100%;
+                width:60%;
+                float:right;
+                background-color: antiquewhite;
+                text-align: center;
+                color: orangered;
+                font-size:large;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .form{
+                border:10px solid orangered;
+                padding:10px;
+                margin: 10px;
+
+            }
+            .submit{
+                height:10%;
+          width:20%;
+          float:center;
+          background-color: orangered;
+          text-align: center;
+          color:aliceblue;
+          font-size:medium;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+           
+            
+    </style>
+    </head>
+    <body>
+        <div>
+        <div class="lt">
+            <br>  <br>   <br>  <br>  <br>  <br>  <br>
+                <p>EXAM CELL AUTOMATION</p>
+                <br>  <br>   <br>  <br>  <br>  <br>   <br>  <br>   <br>  <br> </div>
+                <div class="rt">
+                    <br>  <br>   <br>  <br>  <br>  <br> 
+                    <p>SELECT THE HALLS</p>
+                    <div class="form">
+                        {%csrf_token%}
+                    <form method="POST">
+                        <input type="checkbox" id="hall1" name="hall1" value="A301">
+                        <label for="hall1"> A301</label>
+                        <input type="checkbox" id="hall2" name="hall2" value="A302">
+                        <label for="hall2"> A302</label>
+                        <input type="checkbox" id="hall3" name="hall3" value="A303">
+                        <label for="hall3"> A303</label>
+                        <input type="checkbox" id="hall4" name="hall4" value="A304">
+                        <label for="hall4"> A304</label>
+                        <input type="checkbox" id="hall5" name="hall5" value="A305">
+                        <label for="hall5"> A305</label><br>
+                        <input type="checkbox" id="hall6" name="hall6" value="A306">
+                        <label for="hall6"> A306</label>
+                        <input type="checkbox" id="hall7" name="hall7" value="A307">
+                        <label for="hall7"> A307</label>
+                        <input type="checkbox" id="hall8" name="hall8" value="A308">
+                        <label for="hall8"> A308</label>
+                        <input type="checkbox" id="hall9" name="hall9" value="A309">
+                        <label for="hall9"> A309</label>
+                        <input type="checkbox" id="hall10" name="hall10" value="A310">
+                        <label for="hall10"> A310</label><br>
+                        <input type="checkbox" id="hall11" name="hall6" value="A311">
+                        <label for="hall11"> A311</label>
+                        <input type="checkbox" id="hall7" name="hall7" value="A312">
+                        <label for="hall12"> A312</label>
+                        <input type="checkbox" id="hall8" name="hall8" value="A313">
+                        <label for="hall13"> A313</label>
+                        <input type="checkbox" id="hall9" name="hall9" value="A314">
+                        <label for="hall14"> A314</label>
+                        <input type="checkbox" id="hall10" name="hall10" value="A315">
+                        <label for="hall15"> A315</label><br><br>
+                       <input type="submit" value="Submit" class="submit">
+                      </form>
+                      </div>
+                    <br>  <br>  <br>  
+           <br>  <br>   <br>  <br>  <br>  <br>   <br>  <br>   <br>  <br>  <br>  <br>   <br>   <br>  <br> 
+                </div>
+                </div>
+    </body>
+    </html>
